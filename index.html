@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <h2>Calculator App</h2>
+    <div class="container">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <form name="example">
+            <input type="text" name="calculator" size="20">
+            <input type="button" name="b1" value="Calculator" onclick="call()">
+            <input type="reset" name="b2" value="Reset">
+            <input type="text" name="answer" size="20">
+        </form>
+    </div>
+<script>
+    function call(){
+        document.example.answer.value=
+        eval(document.example.calculator.value);
+    }
+</script>
+</body>
+
+</html>
